@@ -1,0 +1,148 @@
+*{
+    margin: 0; 
+    padding: 0;
+    font-family: Helvetica;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3{
+    color: #000;
+}
+
+p{color: #2c2d30;}
+
+/* Navbar */
+.header{
+    width: 100%;
+    height: 80px;
+    background-color: #232a31;
+    padding: 0 2rem;
+}
+
+nav{
+    position: relative;
+}
+
+.logo{
+    width: 50px;
+    margin-top: 15px;
+}
+
+.navbar-items{
+    position: absolute;
+    right: 0;
+    height: 80px;
+    line-height: 80px;
+    margin: 0;
+    display: inline-block;
+}
+
+.navbar-items li {
+    display: inline-block;
+    text-transform: uppercase;
+    margin-left: 5px;
+}
+
+.navbar-items a{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.navbar-items a:hover{
+    color: #ccc;
+}
+
+.suport-btn{
+    padding: 15px 20px;
+    border-radius: 15px;
+    background-color: #2cc76a;
+}
+.navbar-items .suport-btn:hover{
+    color: black;
+    background-color: #22bb5f;
+}
+ 
+/* contact form */
+.contact-container{
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    padding: 5rem 0 2rem 0;
+}
+
+.contact-container h2 {
+    font-size: 36px;
+}
+
+.contact-container p{
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.contact-container input,
+.contact-container textarea{
+    width: 205px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 0 10px 20px;
+    text-align: center;
+}
+
+.contact-container textarea{
+    display: block;
+    margin: 0 auto 20px;
+    width: 470px;
+    height: 150px;
+}
+
+.contact-container input[type="submit"]{
+    display: block;
+    margin: 0 auto;
+    background-color: #2cc76a;
+    color: #FFF;
+    cursor: pointer;
+}
+
+/* foorter */
+
+footer {
+    text-align: center ;
+    font-weight: bold;
+    margin: 20px 0 100px;
+}
+
+.ctt{
+    font-size: 10px;
+}
+
+@media (max-width: 576px){
+    .navbar-items li{
+        font-size: 12px;
+        margin-left: 10px;
+    }
+    .contact-container input,
+    .contact-container textarea{
+        width: 100%;
+        margin: 10px 0;
+        font-size: 12px;
+    }
+    .contact-container textarea{
+        font-size: 12px;
+    }
+    .contact-container p{
+        font-size: 12px;
+        margin: 15px auto;
+    }
+    .contact-container h2{
+        font-size: 20px;
+        margin: 10px auto;
+    }
+    .contact-container .btn{
+        color: black;
+        background-color: #0edb60;
+    }
+}
